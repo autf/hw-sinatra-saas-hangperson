@@ -1,0 +1,24 @@
+current directory: /home/runner/hw-sinatra-saas-hangperson/vendor/ruby/3.0.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+/nix/store/9i3ndmscj10cbnij3wxp1v9a6w4vvrny-ruby-3.0.1/bin/ruby -I /nix/store/9i3ndmscj10cbnij3wxp1v9a6w4vvrny-ruby-3.0.1/lib/ruby/3.0.0 -r ./siteconf20210822-54-6an2s0.rb extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+current directory: /home/runner/hw-sinatra-saas-hangperson/vendor/ruby/3.0.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+make DESTDIR\= clean
+
+current directory: /home/runner/hw-sinatra-saas-hangperson/vendor/ruby/3.0.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+make DESTDIR\=
+compiling gherkin_lexer_zh_tw.c
+In file included from /nix/store/hgjn8fzxnkr03fav3yaf4fp0d8vmqbjj-glibc-2.32-48-dev/include/assert.h:35,
+                 from ragel/i18n/zh_tw.c.rl:1:
+/nix/store/hgjn8fzxnkr03fav3yaf4fp0d8vmqbjj-glibc-2.32-48-dev/include/features.h:397:4: warning: #warning _FORTIFY_SOURCE requires compiling with optimization (-O) [-Wcpp]
+  397 | #  warning _FORTIFY_SOURCE requires compiling with optimization (-O)
+      |    ^~~~~~~
+cc1: note: unrecognized command-line option '-Wno-self-assign' may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option '-Wno-parentheses-equality' may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option '-Wno-constant-logical-operand' may have been intended to silence earlier diagnostics
+linking shared-object gherkin_lexer_zh_tw.so
+
+current directory: /home/runner/hw-sinatra-saas-hangperson/vendor/ruby/3.0.0/gems/gherkin-2.12.2/ext/gherkin_lexer_zh_tw
+make DESTDIR\= install
+/nix/store/937f5738d2frws07ixcpg5ip176pfss1-coreutils-8.32/bin/install -c -m 0755 gherkin_lexer_zh_tw.so ./.gem.20210822-54-9jgv6j

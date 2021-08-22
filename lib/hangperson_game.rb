@@ -9,8 +9,30 @@ class HangpersonGame
   # end
   
   def initialize(word)
-    @word = word
+    @word = word.downcase
+    @guesses = ''
+    @wrong_guesses = ''
   end
+
+  attr_reader :word, :guesses, :wrong_guesses, :word_with_guesses
+
+  # def word = @word
+  # def guesses = @guesses
+  # def wrong_guesses = @wrong_guesses
+
+  def guess w
+    raise ArgumentError if (w || '').empty?
+    w = w[0].downcase
+    raise ArgumentError unless /[a-z]/ =~ w
+    return false if guesses.include? w or wrong_guesses.include? w
+    (word.index(w) ? @guesses : @wrong_guesses) << w
+    @word_with_guesses = word.tr("^#{guesses}$", '-') # `$` after `guesses}` is just a placeholder in case of empty guesses
+  end
+
+  # def word_with_guesses = @word_with_guesses
+  def check_win_or_lose =
+    wrong_guesses.length == 7 ? :lose :
+    word_with_guesses.index('-') ? :play : :win
 
   # You can test it by installing irb via $ gem install irb
   # and then running $ irb -I. -r app.rb
