@@ -12,6 +12,7 @@ class HangpersonGame
     @word = word.downcase
     @guesses = ''
     @wrong_guesses = ''
+    @word_with_guesses = '-' * word.length
   end
 
   attr_reader :word, :guesses, :wrong_guesses, :word_with_guesses
